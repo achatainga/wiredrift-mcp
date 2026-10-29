@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "hooks": [
+    {
+      "event": "PreToolUse",
+      "matcher": {
+        "tool": "run_command",
+        "pattern": "(npm|pnpm|yarn|pytest|cargo)\\s+(test|run\\s+test)"
+      },
+      "action": {
+        "type": "verify_wire_contracts",
+        "instruction": "Enforce mock contract alignment against OpenAPI/JSON schema before allowing test suite execution. Block if mock shapes diverge from production contracts."
+      }
+    }
+  ]
+}
