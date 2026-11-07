@@ -1,5 +1,5 @@
 ---
-name: wiredrift-mcp
+name: wiredrift
 description: AST-Powered Wire Contract Drift & Mock Desynchronization Detector for Autonomous Coding Agents.
 version: 1.0.0
 tags:
